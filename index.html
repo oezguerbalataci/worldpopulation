@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World population</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+    <div id ="container" class="col-xs-1" align="center">
+        <div id= "header">
+            <h1>World Countries Data</h1>
+        </div>
+
+        <div id = "changeBetweenData">
+            <div>
+                <button id = "population" type="button" class="btn btn-primary" onclick="popButton()">Population</button>
+                <button id = "languages" class="btn btn-primary" onclick="langButton()">Languages</button>
+                <p></p>
+                <div id= "popText"><p>10 Most populated countries in the World</p></div> 
+                <div id= "langText"><p>10 Most spoken languages in the World</p></div>
+            </div>
+        </div>
+        <div id="charts">
+            <div id="pop">
+                <canvas id="populationChart"></canvas>
+            </div>
+            <div id="lang">
+                <canvas id ="langChart"></canvas>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="chart1.js"></script>
+    <script src="functions.js"></script>
+</body>
+</html>

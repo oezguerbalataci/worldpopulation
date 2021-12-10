@@ -1,0 +1,14 @@
+#lang{
+    display :none;
+}
+
+
+#langText{
+    display: none;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+#charts{
+    padding-right: 10%;
+    padding-left:10%;
+}
